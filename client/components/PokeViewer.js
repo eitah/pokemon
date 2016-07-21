@@ -2,24 +2,17 @@
 
 import React from 'react';
 
-class PokeViewer extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-
-  render() {
-    return (
-      <div>
-        <div className='row'>
-          <div className='col-xs-6'>
-            <h1>{this.props.poke.name}</h1>
-            <img src={`${this.props.poke.picURL}`} alt='' />
-          </div>
+export default (props) => {
+  return (
+    <div>
+      <div className='row'>
+        <div className='col-xs-3'>
+          <h2>{props.poke.name}</h2>
+        </div>
+        <div className='col-xs-3'>
+          <img className="img-responsive" src={`${props.poke.picURL}`} alt='' />
         </div>
       </div>
-    );
-  }
-}
-
-export default PokeViewer;
+    </div>
+  );
+};

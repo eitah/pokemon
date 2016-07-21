@@ -1,4 +1,4 @@
-/* eslint-disable jsx-quotes, react/prop-types */
+/* eslint-disable jsx-quotes, react/prop-types, no-useless-constructor */
 
 import React from 'react';
 

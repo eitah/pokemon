@@ -4,7 +4,7 @@ import React from 'react';
 import PokeCreator from './PokeCreator';
 import PokeViewer from './PokeViewer';
 
-class Pokemon extends React.Component {
+class User extends React.Component {
   constructor(props) {
     super(props);
     this.state = { pokemon: [] };
@@ -43,7 +43,7 @@ class Pokemon extends React.Component {
           </div>
         </div>
         <div className='row'>
-          <div className='col-xs-12'>
+          <div className='col-xs-8'>
             <h1>Pokdex</h1>
           {this.state.pokemon.map(s => <PokeViewer key={s._id} poke={s} />)}
           </div>
@@ -53,4 +53,4 @@ class Pokemon extends React.Component {
   }
 }
 
-export default Pokemon;
+export default User;

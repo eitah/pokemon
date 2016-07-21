@@ -2,7 +2,8 @@
   "name": "pokemon",
   "version": "1.0.3",
   "scripts": {
-    "dev": "DB=poke-dev-db LEVEL=silly PORT=3333 nodemon dst/server.js"
+    "dev": "DB=poke-dev-db LEVEL=silly PORT=3333 nodemon dst/server.js",
+    "start": "LEVEL=silly node dst/server.js"
   },
   "author": "Eli and Alex",
   "license": "MIT",

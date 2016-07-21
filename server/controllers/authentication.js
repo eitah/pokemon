@@ -9,8 +9,10 @@ const router = module.exports = express.Router();
 router.post('/register', (req, res) => {
   User.create(req.body, (err, user) => {
     if (!user) {
+      console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!400 status');
       return res.status(400).send();
     }
+    console.log('200 status recieved');
     return res.status(200).send();
   });
 });

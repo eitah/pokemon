@@ -44,7 +44,7 @@ class Pokemon extends React.Component {
         </div>
         <div className='row'>
           <div className='col-xs-12'>
-            <h1>Pokdex</h1>
+            <h1>Pokedex</h1>
           {this.state.pokemon.map(s => <PokeViewer key={s._id} poke={s} />)}
           </div>
         </div>
